@@ -41,7 +41,7 @@ module.exports = {
      * node-red from being able to decrypt your existing credentials and they will be
      * lost.
      */
-    //credentialSecret: "a-secret-key",
+    credentialSecret: "QI44CFZUGvAqsQDLbtbZjPETQi3XotDDIe2l",
 
     /** By default, the flow JSON will be formatted over multiple lines making
      * it easier to compare changes when using version control.
@@ -270,9 +270,9 @@ module.exports = {
     */
     diagnostics: {
         /** enable or disable diagnostics endpoint. Must be set to `false` to disable */
-        enabled: true,
+        enabled: false,
         /** enable or disable diagnostics display in the node-red editor. Must be set to `false` to disable */
-        ui: true,
+        ui: false,
     },
     /** Configure runtimeState options
      * - enabled:  When `enabled` is `true` flows runtime can be Started/Stopped
@@ -383,7 +383,7 @@ module.exports = {
         /** To disable the 'Welcome to Node-RED' tour that is displayed the first
          * time you access the editor for each release of Node-RED, set this to false
          */
-        //tours: false,
+        tours: false,
 
         palette: {
             /** The following property can be used to order the categories in the editor
@@ -396,7 +396,7 @@ module.exports = {
 
         projects: {
             /** To enable the Projects feature, set this value to true */
-            enabled: false,
+            enabled: true,
             workflow: {
                 /** Set the default projects workflow mode.
                  *  - manual - you must manually commit changes
