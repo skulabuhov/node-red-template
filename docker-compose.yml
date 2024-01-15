@@ -7,7 +7,7 @@ services:
     environment:
       - TZ=Europe/Moscow
     ports:
-      - "1880:1880"
+      - ${DOCKER_APP_PORT}:1880
     volumes:
       - nodereddata:/data
 
