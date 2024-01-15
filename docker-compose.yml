@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    container_name: nodered-template
+    environment:
+      - TZ=Europe/Moscow
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodereddata:/data
+
+volumes:
+  nodereddata:
